@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат Культиваторов | 修仙者聊天</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <header class="chat-header">
+            <div class="header-decoration">
+                <span class="lotus">🪷</span>
+                <span class="peach">🍑</span>
+            </div>
+            <h1>
+                <span class="chinese">修仙界</span>
+                Чат Культиваторов
+            </h1>
+            <div class="header-decoration">
+                <span class="peach">🍑</span>
+                <span class="lotus">🪷</span>
+            </div>
+        </header>
+
+        <!-- User Legend -->
+        <div class="user-legend">
+            <div class="legend-item moderator">
+                <span class="badge mod-badge">MOD</span>
+                <span>Модератор</span>
+            </div>
+            <div class="legend-item vip">
+                <span class="badge vip-badge">VIP</span>
+                <span>ВИП</span>
+            </div>
+            <div class="legend-item subscriber">
+                <span class="badge sub-badge">SUB</span>
+                <span>Подписчик</span>
+            </div>
+            <div class="legend-item regular">
+                <span class="badge reg-badge">USR</span>
+                <span>Пользователь</span>
+            </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be dynamically added here -->
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+            <div class="input-decoration">
+                <span class="lotus-small">🪷</span>
+            </div>
+            <input 
+                type="text" 
+                id="messageInput" 
+                placeholder="Введите сообщение... 输入消息..." 
+                autocomplete="off"
+            >
+            <button id="sendButton" class="send-btn">
+                <span>发送</span>
+                <span class="peach-icon">🍑</span>
+            </button>
+            <div class="input-decoration">
+                <span class="lotus-small">🪷</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
